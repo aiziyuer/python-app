@@ -33,3 +33,11 @@ rm -rf ${site_packages_dir}
 # 考虑源码
 cd ${SCRIPT_HOME}/src
 zip -9r ${DIST_ZIP_FILE} .
+
+
+# 制作可以直接运行的zip
+echo '#!/usr/bin/env python' | cat - ${DIST_ZIP_FILE} > temp \
+&& mv temp ${DIST_ZIP_FILE}
+
+# 设置可执行权限
+chmod +x ${DIST_ZIP_FILE}
