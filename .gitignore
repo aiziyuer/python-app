@@ -1,0 +1,9 @@
+# IDE中间文件
+.idea
+
+# 应用打包输出目录
+dist/*
+!dist/.keep
+
+# virtualenv创建的环境
+env-*

@@ -1,0 +1,3 @@
+furl==1.0.1
+orderedmultidict==0.7.11
+six==1.11.0
